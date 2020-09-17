@@ -3,7 +3,7 @@
 
 Free Coding Bootcamp is premium coding bootamp with live classes Monday to Friday!
 
-Here are some great qualities of Free Coding Bootcamp.
+Here are some great qualities of Free Coding Bootcamp:
 * Taught by a Qualified Instructor
 * Full-Stack Web Development Curriculum
 * Amazing Support
