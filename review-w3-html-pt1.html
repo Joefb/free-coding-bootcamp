@@ -1,0 +1,259 @@
+<!-- Review W3 HTML Tutorial Part 1 notes-->
+<!-- By: Joe Burgess -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Review W3 HTML Tutorial Part 1</title>
+  </head>
+
+  <body>
+    <h1>Review W3 HTML Tutorial Part 1</h1>
+
+    <h2>HTML Formatting</h2>
+    <p>
+      Use html formating elements to add special meaning to the text. There are several formatting
+      elements that are used such as:
+    </p>
+
+    <ul>
+      <li>
+        <b>&lt;b&gt;</b> Defines the text as bold.
+      </li>
+
+      <li>
+        <strong>&lt;strong&gt;</strong> Defines text with strong importance.
+      </li>
+
+      <li>
+        <i>&lt;i&gt;</i> Defines text in an alternate voice or mood. Often used to indicate a technical term.
+      </li>
+
+      <li>
+        <em>&lt;em&gt;</em> Defines emphasized text. Screen readers will pronounce with emphasis. 
+      </li>
+
+      <li>
+        <mark>&lt;mark&gt;</mark> Definds that the text should be marked or highlighted.
+      </li>
+
+      <li>
+        <small>&lt;small&gt;</small> Defines smaller text.
+      </li>
+
+      <li>
+        <del>&lt;del&gt;</del> Defines text that has been deleted from a document.
+      </li>
+
+      <li>
+        <ins>&lt;ins&gt;</ins> Defines text that has been inserted into a document.
+      </li>
+
+      <li>
+        <sub>&lt;sub&gt;</sub> Defines subscript text.The text appears half a char below the normal line.
+        Subscript can be used for formulas line H<sub>2</sub>O.
+      </li>
+
+      <li>
+        <sup>&lt;sup&gt;</sup> Defines superscript text. Superscript text appears half a char above the normal line.
+        Superscript can be used for foot notes like WWW<sup>[1]</sup>
+      </li>
+    </ul>
+
+    <h2>HTML Quotations</h2>
+    <p>
+      HTMl has elements that are used for quotations and citations. Here are the emelemts used.
+    </p> 
+
+    <ul>
+      <li>
+        &lt;blockquote&gt; <blockquote>Defines a section that is quoted from anoher source.</blockquote>
+      </li>
+
+      <li>
+        &lt;p&gt; <q>Defines a short quotation.</q>
+      </li>
+
+      <li>
+        &lt;abbr&gt; <abbr title="Free Coding Bootcamp">FCB</abbr> Defines an abbrevation or acronym.
+      </li>
+
+      <li>
+       &lt;address&gt; <address> Defines the contact information of the author or owner of
+       a document or article.</address> 
+      </li>
+
+      <li>
+        &lt;cite&gt; <cite>Defines the title of creative work.</cite>
+      </li>
+
+      <li>
+        &lt;bdo&gt; <bdo dir="rtl">Free Coding Bootcamp</bdo> Used to override the current text direction.
+        Using the dir attribute you can change the direction of the text. This example writes the text right to left. 
+      </li>
+    </ul>
+
+    <h2>HTML Comments</h2>
+    <p>
+      Comments are used in your code to help understand what a certain block of code is doing.
+      Comments are ignored by browser and will not be displayed on your page. They are great for debugging.
+      To add a comment in your HTML you use &lt;!-- Write comments here --&gt; 
+    </p>
+
+    <h2>HTML Colors</h2>
+    <p>
+      Colors can be used in HTML to color various HTML elements. Use the style attribute in the opening
+      tag such as below.
+    </p>
+    <p style="color:DodgerBlue;">This text will be blue.</p>
+    <p> 
+      Although the style attribue can be used in elements most of the time a seprate style sheet
+      is used to do this.
+    </p>
+
+    <h2>HTML CSS</h2>
+    <p>
+      CSS stands for <i>Cascading Style Sheets</i>. CSS is used to format the layout of your web page.
+      With CSS you can control how your web page looks. CSS has a vast amount of attributes to make your web page look pretty!
+    </p>
+    <p>There are three different ways to add CSS to your HTML document.</p> 
+
+    <ul>
+      <li><b>Inline</b> - by using the sytle attribute inside your element as seen above.</li>
+      <li><b>Internal</b> - by using the &lt;style&gt; element in the &lt;head&gt; section.</li>
+      <li><b>External</b> - by using a &lt;link&gt; element to link to an external CSS file.</li>
+    </ul>
+
+    <p>
+      The most common way to add CSS is to keep the styles in external CSS files.
+    </p>
+
+    <h2>HTML Links</h2>
+    <p>
+      Html links are hyperlinks to another document. To add a link the &lt;a&gt; element is used
+      with the href attribute. For example <a href="https://www.freecodingbootcamp.org/index.php">Free Coding Bootcamp</a>
+      will take you to the Free Coding Bootcamp web site. 
+    </p>
+
+    <p>
+      You can use the &lt;target&gt; attribute to choose how the document opens such as:
+    </p>
+
+    <ul>
+      <li><b>_self</b> - Is default. Opens the document in the same window or tab.</li>
+      <li><b>_blank</b> - Opens the document in a new window or tab.</li>
+      <li><b>_parent</b> - Opens the document in the parent frames.</li>
+      <li><b>_top</b> - Opens the document in the full body of the window.</li>
+    </ul>
+
+    <h2>HTML Images</h2>
+    <p>
+      You can insert images into your document by using the &lt;img&gt; element. This element does
+      not have a closing tag. The &lt;img&gt; needs to have the <i>src</i> attribute to point to the location of the image
+      and the <i>alt</i> attribute that specifies an alternate text for the image. If the link is broken the
+      alternate text will be shown. If the user is using a screen reader the alternate text will be read.
+      CSS should be used to position and size the image.
+    </p>
+    <img src="https://avantutor.com/images/logo_smaller.png" alt="Avan logo">
+
+    <h2>HTML Tables</h2>
+    <p>
+      HTML tables are used to arrage data into rows and columns. The &lt;table&gt; element is used to define a table.
+      There many different tags that need to set be to configure the table. CSS can be used to style the table.
+      Here are the HTML table tags:
+    </p>
+
+    <table style="width:100%">
+      <tr>
+        <th style="text-align:left">Tag Name</th>
+        <th style="text-align: left;">Description</th>
+      </tr>
+
+      <tr>
+        <td>&lt;table&gt;</td>
+        <td>Defines a table</td>
+      </tr>
+
+      <tr>
+        <td>&lt;th&gt;</td>
+        <td>Defines a header in the table</td>
+      </tr>
+
+      <tr>
+        <td>&lt;trth&gt;</td>
+        <td>Defines a row in the table</td>
+      </tr>
+
+      <tr>
+        <td>&lt;td&gt;</td>
+        <td>Defines a cell in the table</td>
+      </tr>
+
+      <tr>
+        <td>&lt;caption&gt;</td>
+        <td>Defines a table caption</td>
+      </tr>
+
+      <tr>
+        <td>&lt;colgroup&gt;</td>
+        <td>Specifies a group of one or more columns in a table for formatting</td>
+      </tr>
+
+      <tr>
+        <td>&lt;col&gt;</td>
+        <td>Specifies column properties for each column within a &lt;colgroup&gt; element</td>
+      </tr>
+
+      <tr>
+        <td>&lt;thead&gt;</td>
+        <td>Groups the header content in a table</td>
+      </tr>
+
+      <tr>
+        <td>&lt;tbody&gt;</td>
+        <td>Groups the body content in a table</td>
+      </tr>
+
+      <tr>
+        <td>&lt;tfoot&gt;</td>
+        <td>Groups the footer in the content table</td>
+      </tr>
+    </table>
+
+    <h2>HTML Lists</h2>
+    <p>HTML Lists lets you group a set of related items. There three types of list elements in HTML.
+       The first is the &lt;ul&gt; element that stands for unordered list. Second is the &lt;ol&gt; element
+       that stands for ordered list. Third is the &lt;dl&gt; element that stands for description list.
+       In order to list an item you use the &lt;li&gt; element for unordered and ordered lists.
+       With description lists you use &lt;dt&gt; element to define the name and &lt;dd&gt; to describe
+       the term. Lets do some examples below. 
+    </p>
+
+    <ul>
+      <li>This is an unordered list.</li>
+      <li>Ordered lists use numbers but unordered lists use bullet points.</li>
+      <li>Free Coding Bootcamp is really fun so far!</li>
+    </ul>
+
+    <ol>
+      <li>This is an ordered list.</li>
+      <li>As you can see it uses numbers.</li>
+      <li>Lets do the description lists next and see what it looks like!</li>
+    </ol>
+
+    <dl>
+      <dt>This is a Description List</dt>
+      <dd>- it shifts the text to the right</dd>
+
+      <dt>HTML</dt>
+      <dd>- a way to structure your web page</dd>
+
+      <dt>CSS</dt>
+      <dd>- a confusing form of space wizdary brought to earth by aliens. </dd>
+    </dl>
+
+  </body> 
+</html>
